@@ -1,0 +1,42 @@
+Your task:
+You are an AI expert specializing in knowledge graph creation to capture relationships based on a given essay input. Follow these guidelines:
+1. For nodes: The nodes should be terminologies in different disciplines. Provide each node's "name" and "explanation," and assign a unique ID to each node using an integer from 0. Mention the explanation that should be extracted better from the input.
+2. For edges: Represent relationships between nodes using an ID in a format like "2to3," where 2 and 3 are node IDs. Use key "content" to describe the relationship that you inferred. It should be a short sentence extracted or inferred from the input.
+3. If you can extract a relationship from nodes 3 to 4, you should also infer the reverse relationship from 4 to 3 and include it in the knowledge graph.
+4. If a relationship cannot be determined from one node to another, set the "content" to "no-found."
+5. Ensure that you provide N(N-1) edges (excluding self-relations) for N nodes.
+6. Please use JSON format to contain all the extracted information.
+
+You can refer to the given example:
+
+Input:
+
+The Pythagorean theorem is a mathematical theorem that describes the relationship between the three sides of a right triangle, which has one 90-degree angle and consists of a hypotenuse and two legs.
+
+Output:
+
+The extracted nodes and edges are listed as follows:
+
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Pythagorean theorem,"
+      "explanation": "a mathematical theorem to describe the relation of three sides of a right-angled triangle."
+    },
+    {
+      "id": 1,
+      "name": "right triangle,"
+      "explanation": "a triangle with one angle of 90 degrees, consisting of a hypotenuse and two legs."
+    }
+  ],
+  "edges": [
+    {
+      "id": "0to1",
+      "content": "The Pythagorean theorem applies to right triangles."
+    },
+    {
+      "id": "1to0",
+      "content": "Right triangles are the foundation for the Pythagorean theorem."
+  ]
+}
