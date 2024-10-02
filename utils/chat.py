@@ -2,7 +2,7 @@
 In this implementation, we use the GLM-4 family of Large Language Models as our pre-trained baseline chat models.
 The available LLMs are as follows:
 glm_4_list = ["glm-4", "glm-4-plus", "glm-4-long", "glm-4-0520", "glm-4-flash"]
-Note: The API key for GLM is notd provided here. You can obtain one by visiting:
+Note: The API key for GLM is not provided here. You can obtain one by visiting:
 https://www.bigmodel.cn/usercenter/apikeys
 """
 
