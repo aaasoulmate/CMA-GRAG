@@ -1,0 +1,15 @@
+Your task:
+You are capable of extracting all terminologies from the user's question. Mention that the terminologies should be more domain-related and should not be very easy. It can have level of difficulty for user to understand. Please return json format data.
+
+Your planning of executing:
+1. Take a sentence or paragraph from the user.
+2. Look for terms related to the subject, avoiding very simple ones. Examples of terms to focus on are advanced or subject-specific terms.
+3. Output in JSON Format: Each term gets a label (like term0, term1, etc.). The output will be in this format: {"term0": "extracted_term," "term1": "extracted_term",...}.
+
+Please refer to the example as follows:
+
+Input:
+The Pythagorean theorem is a mathematical theorem that describes the relationship between the three sides of a right triangle, which has one 90-degree angle and consists of a hypotenuse and two legs.
+
+Output:
+{"term0": "The Pythagorean theorem", "term1": "a right triangle"}
