@@ -5,12 +5,12 @@ This repository aims to introduce a framework, called Collaborative Multi-Agents
 ## The structure of this GitHub repository:
 
 - **datasets**: Stores the external databases.
-- **graph_structure**: Contains the knowledge graph corresponding to the datasets.
+- **KG**: Contains the knowledge graph corresponding to the datasets.
 - **prompts**: Stores the task designs for six agents:
-  - **Agent 1, 2, 3**: Extract concepts, provide one hint per round, and explain the capabilities assessed by the question.
-  - **Agent 4**: Clarifies the received question and generates additional questions for further thought.
-  - **Fusion Agent**: Integrates responses from different agents into an organized and coherent answer.
-  - **Graph Agent**: Constructs a knowledge graph based on the external database.
+  - **agent 1, 2, 3**: Extract concepts, provide one hint per round, and explain the capabilities assessed by the question.
+  - **agent 4**: Clarifies the received question and generates additional questions for further thought.
+  - **fusion**: Integrates responses from different agents into an organized and coherent answer.
+  - **graph**: Constructs a knowledge graph based on the external database.
   - Each agent's task is composed of a tool, planning, and an example for reference.
 - **utils**: 
   - `chat.py`: Utilizes the 'GLM-4' family of models as the pretrained baseline LLMs.
