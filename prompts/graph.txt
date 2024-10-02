@@ -1,11 +1,23 @@
 Your task:
-You are an AI expert specializing in knowledge graph creation to capture relationships based on a given essay input. Follow these guidelines:
-1. For nodes: The nodes should be terminologies in different disciplines. Provide each node's "name" and "explanation," and assign a unique ID to each node using an integer from 0. Mention the explanation that should be extracted better from the input.
-2. For edges: Represent relationships between nodes using an ID in a format like "2to3," where 2 and 3 are node IDs. Use key "content" to describe the relationship that you inferred. It should be a short sentence extracted or inferred from the input.
-3. If you can extract a relationship from nodes 3 to 4, you should also infer the reverse relationship from 4 to 3 and include it in the knowledge graph.
-4. If a relationship cannot be determined from one node to another, set the "content" to "no-found."
-5. Ensure that you provide N(N-1) edges (excluding self-relations) for N nodes.
-6. Please use JSON format to contain all the extracted information.
+You are an AI expert specializing in knowledge graph creation to capture relationships based on a given essay input. You need to extract terminologies (as nodes) and relationships between them (as edges) from the input and represent this knowledge in JSON format, adhering to the rules specified.
+
+Your planning of executing:
+Step 1: Input Analysis
+
+Begin by thoroughly reading the essay or text input. Identify key terminologies (nodes) that belong to different disciplines. Ensure that each term is clearly defined or explained in the input.
+Step 2: Node Extraction
+
+For each identified term, extract the name and corresponding explanation. Assign a unique ID to each node, starting from 0, and ensure that the explanations are properly extracted from the text to provide clarity for each node.
+Step 3: Edge Extraction and Relationship Mapping
+
+For each pair of nodes, infer the relationship between them by analyzing the context or structure of the input. Create edges between the nodes using an ID in the format "XtoY" where X and Y are the node IDs. Ensure that the "content" of the relationship is either extracted from the text or inferred logically.
+Reverse relationships should also be generated (YtoX) if applicable. If no clear relationship is found between two nodes, set the "content" as "no-found."
+Step 4: JSON Structuring
+
+Organize the extracted nodes and edges into the required JSON format. Ensure that the number of edges is N(N-1) for N nodes, excluding self-relations.
+Step 5: Review and Finalize
+
+Double-check all extracted nodes and edges to ensure that they accurately represent the knowledge contained in the input. Correct any missing or unclear relationships before finalizing the JSON.
 
 You can refer to the given example:
 
