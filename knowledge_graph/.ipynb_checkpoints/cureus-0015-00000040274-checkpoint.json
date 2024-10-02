@@ -1,0 +1,128 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "name": "India's health indicators",
+            "explanation": "Improved but lag behind peer nations.",
+            "similarity_score": 0.6073716307823804
+        },
+        {
+            "id": 1,
+            "name": "WHO threshold",
+            "explanation": "Recommended 44.5 doctors, nurses, and midwives per 10,000 population.",
+            "similarity_score": 0.4771666721274023
+        },
+        {
+            "id": 2,
+            "name": "Public health sector",
+            "explanation": "Underfunded, provides healthcare to vulnerable populations.",
+            "similarity_score": 0.6230881081712301
+        },
+        {
+            "id": 3,
+            "name": "Private health sector",
+            "explanation": "Dominant provider of healthcare, perceived to provide quality care.",
+            "similarity_score": 0.6263139361418826
+        },
+        {
+            "id": 4,
+            "name": "National Health Mission (NHM)",
+            "explanation": "Aims to increase healthcare services, focuses on primary healthcare.",
+            "similarity_score": 0.7193918994073849
+        },
+        {
+            "id": 5,
+            "name": "Accredited Social Health Activists (ASHA)",
+            "explanation": "Female community health workers, serve to increase reach of healthcare.",
+            "similarity_score": 0.5980518805472382
+        },
+        {
+            "id": 6,
+            "name": "Auxiliary Nurse Midwives (ANM)",
+            "explanation": "Healthcare workers serving a population of 5,000 to 20,000 people.",
+            "similarity_score": 0.6692894942678469
+        },
+        {
+            "id": 7,
+            "name": "Rural Medical Assistants (RMA)",
+            "explanation": "Contractual health workers, similar to physician assistants.",
+            "similarity_score": 0.5694689672768122
+        },
+        {
+            "id": 8,
+            "name": "National Medical Council (NMC)",
+            "explanation": "Replaced Medical Commission, aims to improve regulation of health professionals.",
+            "similarity_score": 0.7361299395796563
+        },
+        {
+            "id": 9,
+            "name": "Ayushman Bharat",
+            "explanation": "Publicly financed health insurance scheme for the poor.",
+            "similarity_score": 0.5521990028276075
+        },
+        {
+            "id": 10,
+            "name": "National Health Protection Mission",
+            "explanation": "Limited uptake, majority of Indians still without health insurance.",
+            "similarity_score": 0.6210425519215748
+        },
+        {
+            "id": 11,
+            "name": "Digital technologies",
+            "explanation": "Used to facilitate vaccination programs and enhance personalized care.",
+            "similarity_score": 0.5044797582459705
+        },
+        {
+            "id": 12,
+            "name": "Telemedicine",
+            "explanation": "Increased during COVID-19, helps overcome healthcare access barriers.",
+            "similarity_score": 0.48494808439078035
+        }
+    ],
+    "edges": [
+        {
+            "id": "0to1",
+            "content": "India's health indicators are below the WHO threshold."
+        },
+        {
+            "id": "2to0",
+            "content": "Public health sector issues contribute to India's lagging health indicators."
+        },
+        {
+            "id": "3to0",
+            "content": "Private health sector issues also contribute to India's lagging health indicators."
+        },
+        {
+            "id": "4to5",
+            "content": "NHM created ASHAs to increase healthcare reach."
+        },
+        {
+            "id": "4to6",
+            "content": "NHM utilizes ANMs for healthcare services."
+        },
+        {
+            "id": "4to7",
+            "content": "NHM employs RMAs for primary healthcare."
+        },
+        {
+            "id": "8to0",
+            "content": "NMC aims to improve regulation to address health indicators."
+        },
+        {
+            "id": "9to0",
+            "content": "Ayushman Bharat targets improved health indicators."
+        },
+        {
+            "id": "10to9",
+            "content": "National Health Protection Mission is part of Ayushman Bharat."
+        },
+        {
+            "id": "11to0",
+            "content": "Digital technologies can improve India's health indicators."
+        },
+        {
+            "id": "12to0",
+            "content": "Telemedicine can improve healthcare access and health indicators."
+        }
+    ]
+}
