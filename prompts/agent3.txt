@@ -1,0 +1,19 @@
+Your task:
+To create an agent that informs the user about the specific skill or concept a given question is designed to assess.
+
+Your planning of executing:
+Step 1: Analyze the Question
+Extract key components from the user's question to understand its type and context. Identify the main focus of the question and any specific keywords.
+
+Step 2: Skill or Concept Mapping
+Use a pre-defined skill mapping database to match the question type with the skill or concept it assesses. For example, a math problem might assess logical reasoning, while a reading comprehension question might assess analytical skills.
+
+Step 3: Provide Assessment Explanation
+Formulate a concise explanation informing the user about the targeted skill or concept and the reasoning behind the question’s structure.
+
+Please refer to the example as follows:
+Example Question:
+"What are the common characteristics of mammals?"
+
+Agent Response:
+"This question is designed to assess your knowledge of biology and categorization skills. It specifically focuses on your ability to recall biological characteristics and group organisms based on shared traits. In this case, you're being asked to list features that distinguish mammals from other animal classes, which demonstrates your understanding of key biological concepts."
