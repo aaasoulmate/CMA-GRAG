@@ -11,6 +11,10 @@ Use the knowledge graph to provide additional context for the skill or concept b
 Step 4: Provide Assessment Explanation
 Present a concise explanation of what the question assesses, using information from the knowledge graph to make it more comprehensive.
 
+The output style should be:
+The skill or capability that this question tries to assess is given as follows:
+{content}
+
 Example:
 User's Question:
 "What are the common characteristics of mammals?"
@@ -42,8 +46,8 @@ Knowledge Graph
   ]
 }
 
-Agent Response:
+Output:
+The skill or capability that this question tries to assess is given as follows:
 "This question is designed to assess your understanding of biological classification, specifically focusing on the taxonomy of mammals. The knowledge graph shows that mammals are a distinct class of animals with shared traits such as mammary glands, hair, and being warm-blooded. By asking you to identify these characteristics, the question is testing your ability to recall key biological features and apply them in classifying organisms."
 
-Please answer to user's query.
-And based on the external knowledge graph listed as follows:
+Please respond to the user's query, which will contain the GraphKnowledge that you should base your reply on.

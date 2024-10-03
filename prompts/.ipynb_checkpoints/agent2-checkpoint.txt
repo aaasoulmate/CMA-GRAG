@@ -8,6 +8,10 @@ Knowledge Graph Lookup: Use the knowledge graph (KG) to identify relevant concep
 Generate Hint: Based on the analysis and KG, generate hust one hint that is both insightful and academically appropriate. Avoid giving the full answer, focusing instead on guiding the user towards it.
 Output the Hint: Present the hint clearly and concisely to the user in a formal tone, ensuring it aligns with the academic style.
 
+The output style should be:
+A hint is give as follows:
+{hint_content}
+
 Example:
 User Input:
 "How can I prove that the sum of the angles in a convex polygon is always (n-2) * 180 degrees, where n is the number of sides?"
@@ -43,8 +47,8 @@ Knowledge Graph (KG):
   ]
 }
 
-Hint Output:
+Output:
+A hint is give as follows:
 "To prove that the sum of the interior angles in a convex polygon is (n-2) * 180 degrees, consider dividing the polygon into triangles by drawing diagonals from one vertex. Each triangle has a sum of 180 degrees, and the key to solving the problem is recognizing the relationship between the number of triangles formed and the number of sides (n) of the polygon."
 
-Please answer to user's query.
-And based on the external knowledge graph listed as follows:
+Please respond to the user's query, which will contain the GraphKnowledge that you should base your reply on.

@@ -12,6 +12,14 @@ JSON Output Format: Each extracted term and its explanation will be output in a 
   "term1": {"term": "extracted_term", "explanation": "retrieved_explanation"}
 }
 
+The output style should be:
+The concepts and explannation are given as follows:
+{
+  "term0": {"term": "extracted_term", "explanation": "retrieved_explanation"},
+  "term1": {"term": "extracted_term", "explanation": "retrieved_explanation"},
+   ...
+}
+
 Example:
 Input (User's Query):
 "I am learning the Pythagorean theorem; I meet a problem here -- Given a right triangle where one leg is 3 units long and the other leg is 4 units long, calculate the length of the hypotenuse (the longest side)."
@@ -50,8 +58,7 @@ External Knowledge Graph (KG):
 }
 
 Output:
-I use a json format to explain what the terminoligies mean in your query.
-The results are listed as follows:
+The concepts and explannation are given as follows:
 {
   "term0": {
     "term": "Pythagorean theorem",
@@ -67,5 +74,4 @@ The results are listed as follows:
   }
 }
 
-Please answer to user's query.
-And based on the external knowledge graph listed as follows:
+Please respond to the user's query, which will contain the GraphKnowledge that you should base your reply on.

@@ -3,80 +3,67 @@
         {
             "id": 0,
             "name": "India's health indicators",
-            "explanation": "Improved but lag behind peer nations.",
-            "similarity_score": 0.6073716307823804
+            "explanation": "Improved but lag behind peer nations."
         },
         {
             "id": 1,
             "name": "WHO threshold",
-            "explanation": "Recommended 44.5 doctors, nurses, and midwives per 10,000 population.",
-            "similarity_score": 0.4771666721274023
+            "explanation": "Recommended 44.5 doctors, nurses, and midwives per 10,000 population."
         },
         {
             "id": 2,
             "name": "Public health sector",
-            "explanation": "Underfunded, provides healthcare to vulnerable populations.",
-            "similarity_score": 0.6230881081712301
+            "explanation": "Underfunded, provides healthcare to vulnerable populations."
         },
         {
             "id": 3,
             "name": "Private health sector",
-            "explanation": "Dominant provider of healthcare, perceived to provide quality care.",
-            "similarity_score": 0.6263139361418826
+            "explanation": "Dominant provider of healthcare, perceived to provide quality care."
         },
         {
             "id": 4,
             "name": "National Health Mission (NHM)",
-            "explanation": "Aims to increase healthcare services, focuses on primary healthcare.",
-            "similarity_score": 0.7193918994073849
+            "explanation": "Aims to increase healthcare services, focuses on primary healthcare."
         },
         {
             "id": 5,
             "name": "Accredited Social Health Activists (ASHA)",
-            "explanation": "Female community health workers, serve to increase reach of healthcare.",
-            "similarity_score": 0.5980518805472382
+            "explanation": "Female community health workers, serve to increase reach of healthcare."
         },
         {
             "id": 6,
             "name": "Auxiliary Nurse Midwives (ANM)",
-            "explanation": "Healthcare workers serving a population of 5,000 to 20,000 people.",
-            "similarity_score": 0.6692894942678469
+            "explanation": "Healthcare workers serving a population of 5,000 to 20,000 people."
         },
         {
             "id": 7,
             "name": "Rural Medical Assistants (RMA)",
-            "explanation": "Contractual health workers, similar to physician assistants.",
-            "similarity_score": 0.5694689672768122
+            "explanation": "Contractual health workers, similar to physician assistants."
         },
         {
             "id": 8,
             "name": "National Medical Council (NMC)",
-            "explanation": "Replaced Medical Commission, aims to improve regulation of health professionals.",
-            "similarity_score": 0.7361299395796563
+            "explanation": "Replaced Medical Commission, aims to improve regulation of health professionals."
         },
         {
             "id": 9,
             "name": "Ayushman Bharat",
-            "explanation": "Publicly financed health insurance scheme for the poor.",
-            "similarity_score": 0.5521990028276075
+            "explanation": "Publicly financed health insurance scheme for the poor."
         },
         {
             "id": 10,
             "name": "National Health Protection Mission",
-            "explanation": "Limited uptake, majority of Indians still without health insurance.",
-            "similarity_score": 0.6210425519215748
+            "explanation": "Limited uptake, majority of Indians still without health insurance."
         },
         {
             "id": 11,
             "name": "Digital technologies",
-            "explanation": "Used to facilitate vaccination programs and enhance personalized care.",
-            "similarity_score": 0.5044797582459705
+            "explanation": "Used to facilitate vaccination programs and enhance personalized care."
         },
         {
             "id": 12,
             "name": "Telemedicine",
-            "explanation": "Increased during COVID-19, helps overcome healthcare access barriers.",
-            "similarity_score": 0.48494808439078035
+            "explanation": "Increased during COVID-19, helps overcome healthcare access barriers."
         }
     ],
     "edges": [

@@ -53,4 +53,4 @@ The extracted nodes and edges are listed as follows:
   ]
 }
 
-Please jsut give the json data based on the user input docuement.
+Please give the json data based on the user input docuement.
