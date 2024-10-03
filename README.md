@@ -13,8 +13,10 @@ This repository aims to introduce a framework, called Collaborative Multi-Agents
   - **graph**: Constructs a knowledge graph based on the external database.
   - Each agent's task is composed of a tool, planning, and an example for reference.
 - **utils**: 
-  - `chat.py`: Utilizes the 'GLM-4' family of models as the pretrained baseline LLMs.
+  - `agents.py`: Builds a class of agents utilizing the 'GLM-4' family of models as the pretrained baseline LLMs. Agent = LLM + system_content here.
+  - `embedding.py`: Embed a sentence or passage into 1024-dimension vectors and also compute the relevance using cosine-similarity measure.
   - `json.extract.py`: Extracts data in JSON format from a given string input.
   - `kg_functions.py`: Provides two functions to operate within a $\text{KG}$-space.
   - `retrieval.py`: Retrieve nodes and edges to augment user's query.
 - **main.ipynb**: Contains the main code to demonstrate the effectiveness of the framework.
+- **requirements.txt**: all the necessary libaries for our project.
