@@ -5,7 +5,7 @@ This repository aims to introduce a framework, called Collaborative Multi-Agents
 ## The structure of this GitHub repository:
 
 - **datasets**: Stores the external databases.
-- **KG**: Contains the knowledge graph corresponding to the datasets.
+- **knowledge_graph**: Contains the knowledge graph in `JSON` format corresponding to the datasets.
 - **prompts**: Stores the task designs for six agents:
   - **agent 1, 2, 3**: Extract concepts, provide one hint per round, and explain the capabilities assessed by the question.
   - **agent 4**: Clarifies the received question and generates additional questions for further thought.
@@ -16,4 +16,5 @@ This repository aims to introduce a framework, called Collaborative Multi-Agents
   - `chat.py`: Utilizes the 'GLM-4' family of models as the pretrained baseline LLMs.
   - `json.extract.py`: Extracts data in JSON format from a given string input.
   - `kg_functions.py`: Provides two functions to operate within a $\text{KG}$-space.
-- **main.py**: Contains the main code to demonstrate the effectiveness of the framework.
+  - `retrieval.py`: Retrieve nodes and edges to augment user's query.
+- **main.ipynb**: Contains the main code to demonstrate the effectiveness of the framework.
