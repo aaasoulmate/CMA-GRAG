@@ -1,115 +1,186 @@
 {
     "nodes": [
         {
-            "id": 0,
-            "name": "India's health indicators",
-            "explanation": "Improved but lag behind peer nations."
-        },
-        {
             "id": 1,
-            "name": "WHO threshold",
-            "explanation": "Recommended 44.5 doctors, nurses, and midwives per 10,000 population."
+            "name": "India",
+            "explanation": "India has a population of 1.3 billion and a density of doctors and nurses lower than the WHO threshold."
         },
         {
             "id": 2,
-            "name": "Public health sector",
-            "explanation": "Underfunded, provides healthcare to vulnerable populations."
+            "name": "Health Indicators",
+            "explanation": "India's health indicators have improved but continue to lag behind peer nations."
         },
         {
             "id": 3,
-            "name": "Private health sector",
-            "explanation": "Dominant provider of healthcare, perceived to provide quality care."
+            "name": "WHO Threshold",
+            "explanation": "The WHO threshold is 44.5 doctors, nurses, and midwives per 10,000 population."
         },
         {
             "id": 4,
-            "name": "National Health Mission (NHM)",
-            "explanation": "Aims to increase healthcare services, focuses on primary healthcare."
+            "name": "Human Resources",
+            "explanation": "Human resources have a central role in healthcare but show a paucity in skilled personnel."
         },
         {
             "id": 5,
-            "name": "Accredited Social Health Activists (ASHA)",
-            "explanation": "Female community health workers, serve to increase reach of healthcare."
+            "name": "Universal Health Coverage",
+            "explanation": "Universal health coverage is a goal India must accelerate towards for sustainable development."
         },
         {
             "id": 6,
-            "name": "Auxiliary Nurse Midwives (ANM)",
-            "explanation": "Healthcare workers serving a population of 5,000 to 20,000 people."
+            "name": "National Medical Council",
+            "explanation": "The newly minted National Medical Council has opportunities within healthcare to achieve SDGs."
         },
         {
             "id": 7,
-            "name": "Rural Medical Assistants (RMA)",
-            "explanation": "Contractual health workers, similar to physician assistants."
+            "name": "Public Sector",
+            "explanation": "The public sector is government-funded and has been underfunded with 1.28% of GDP allocation."
         },
         {
             "id": 8,
-            "name": "National Medical Council (NMC)",
-            "explanation": "Replaced Medical Commission, aims to improve regulation of health professionals."
+            "name": "Private Sector",
+            "explanation": "The private sector is the dominant provider, perceived to provide quality care and involves booming medical tourism."
         },
         {
             "id": 9,
-            "name": "Ayushman Bharat",
-            "explanation": "Publicly financed health insurance scheme for the poor."
+            "name": "Federal Health Budget",
+            "explanation": "The increase in the federal health budget is seen as an opportunity for healthcare reforms."
         },
         {
             "id": 10,
-            "name": "National Health Protection Mission",
-            "explanation": "Limited uptake, majority of Indians still without health insurance."
+            "name": "National Health Mission",
+            "explanation": "NHM has aimed to increase the quantum of services since its inception in 2005."
         },
         {
             "id": 11,
-            "name": "Digital technologies",
-            "explanation": "Used to facilitate vaccination programs and enhance personalized care."
+            "name": "Accredited Social Health Activists (ASHA)",
+            "explanation": "ASHAs are community health workers serving to extend the reach of Auxiliary Nurse Midwives."
         },
         {
             "id": 12,
+            "name": "Auxiliary Nurse Midwives (ANM)",
+            "explanation": "ANMs are meant to serve a population of 5,000 people but often serve up to 20,000."
+        },
+        {
+            "id": 13,
+            "name": "Ayushman Bharat",
+            "explanation": "Ayushman Bharat is a health insurance scheme designed to allow access to care services."
+        },
+        {
+            "id": 14,
+            "name": "Digital Technologies",
+            "explanation": "Digital technology facilitates healthcare delivery and has been catalyzed by the COVID-19 pandemic."
+        },
+        {
+            "id": 15,
             "name": "Telemedicine",
-            "explanation": "Increased during COVID-19, helps overcome healthcare access barriers."
+            "explanation": "Telemedicine has amplified the reach of care during the COVID-19 pandemic."
+        },
+        {
+            "id": 16,
+            "name": "Violence against Healthcare Personnel",
+            "explanation": "Increasing incidents of violence against doctors are a worrisome trend."
         }
     ],
     "edges": [
         {
-            "id": "0to1",
-            "content": "India's health indicators are below the WHO threshold."
+            "id": "1to3",
+            "content": "India's density of doctors and nurses per 10,000 persons is much lower than the WHO threshold."
         },
         {
-            "id": "2to0",
-            "content": "Public health sector issues contribute to India's lagging health indicators."
+            "id": "3to1",
+            "content": "WHO threshold denotes the density required for doctors, nurses, and midwives per 10,000 population in India."
         },
         {
-            "id": "3to0",
-            "content": "Private health sector issues also contribute to India's lagging health indicators."
+            "id": "1to2",
+            "content": "India's health indicators have improved but lag behind those of its peer nations."
         },
         {
-            "id": "4to5",
-            "content": "NHM created ASHAs to increase healthcare reach."
+            "id": "2to1",
+            "content": "The health indicators of India continue to lag behind peer nations despite improvement."
         },
         {
-            "id": "4to6",
-            "content": "NHM utilizes ANMs for healthcare services."
+            "id": "1to5",
+            "content": "The paucity of skilled personnel in India affects its progress towards universal health coverage and SDGs."
         },
         {
-            "id": "4to7",
-            "content": "NHM employs RMAs for primary healthcare."
+            "id": "5to1",
+            "content": "Universal health coverage is a goal that India must accelerate towards for sustainable development."
         },
         {
-            "id": "8to0",
-            "content": "NMC aims to improve regulation to address health indicators."
+            "id": "4to1",
+            "content": "Human resource issues must be tackled for improving India's healthcare."
         },
         {
-            "id": "9to0",
-            "content": "Ayushman Bharat targets improved health indicators."
+            "id": "1to4",
+            "content": "The central role of human resources in India’s healthcare highlights a paucity of skilled personnel."
         },
         {
-            "id": "10to9",
-            "content": "National Health Protection Mission is part of Ayushman Bharat."
+            "id": "6to8",
+            "content": "The National Medical Council is analyzed alongside the burgeoning private health sector systems."
         },
         {
-            "id": "11to0",
-            "content": "Digital technologies can improve India's health indicators."
+            "id": "8to6",
+            "content": "The burgeoning private sector systems are analyzed along with the National Medical Council."
         },
         {
-            "id": "12to0",
-            "content": "Telemedicine can improve healthcare access and health indicators."
+            "id": "7to8",
+            "content": "The growing divide between the public and private health sectors is analyzed."
+        },
+        {
+            "id": "8to7",
+            "content": "The divide between the burgeoning private and public health sectors is increasing."
+        },
+        {
+            "id": "7to1",
+            "content": "The public sector is seeking to improve India's healthcare provision through NHM."
+        },
+        {
+            "id": "1to7",
+            "content": "India's public sector is underfunded but aims to provide healthcare to vulnerable populations."
+        },
+        {
+            "id": "8to9",
+            "content": "The private sector perceives opportunities with the federal health budget increase."
+        },
+        {
+            "id": "9to8",
+            "content": "The increase in the federal health budget has perceived opportunities in the private sector."
+        },
+        {
+            "id": "10to7",
+            "content": "NHM aimed to increase services in the public healthcare sector."
+        },
+        {
+            "id": "11to12",
+            "content": "ASHAs are serving to increase the reach of Auxiliary Nurse Midwives."
+        },
+        {
+            "id": "12to11",
+            "content": "Auxiliary Nurse Midwives' reach is extended by ASHAs."
+        },
+        {
+            "id": "13to5",
+            "content": "Ayushman Bharat aims to provide access to care services and can help meet SDGs."
+        },
+        {
+            "id": "5to13",
+            "content": "Universal health coverage includes schemes like Ayushman Bharat to accelerate progress towards SDGs."
+        },
+        {
+            "id": "14to15",
+            "content": "Digital technology has facilitated an increase in telemedicine usage."
+        },
+        {
+            "id": "15to14",
+            "content": "Telemedicine usage was facilitated by advancements in digital technology."
+        },
+        {
+            "id": "16to1",
+            "content": "Violence against healthcare personnel in India hinders healthcare provision efforts."
+        },
+        {
+            "id": "1to16",
+            "content": "Incidents of violence against healthcare personnel add stress to India's healthcare challenges."
         }
     ]
 }
