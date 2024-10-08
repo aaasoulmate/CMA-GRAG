@@ -23,4 +23,5 @@ This repository aims to introduce a framework, called Collaborative Multi-Agents
 - **main.ipynb**: Contains the main code to demonstrate the effectiveness of the framework.
 - **requirements.txt**: all the necessary libaries for our project.
 
-## Time taken of this project: about 155s; it shows that we need many improvements
+## Time taken of this project:
+about 155s; it shows that we need many improvements
