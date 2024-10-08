@@ -1,6 +1,3 @@
-import re
-import json
-
 """
 This script defines a function `extract_json_from_string` that extracts and parses 
 JSON objects embedded within text. It is especially useful when the JSON data 

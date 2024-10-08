@@ -8,10 +8,8 @@ import numpy as np
 from zhipuai import ZhipuAI
 from numpy.linalg import norm
 
-# Initialize the ZhipuAI client
-client = ZhipuAI(api_key="3a96f3438411dfd81700ce172c4e5b89.fSLyWokcvYectqvI")
 
-def get_embedding(input_text: str):
+def get_embedding(key, input_text: str):
     """
     This function generates a 1024-dimensional embedding vector for a given input text using the embedding-3 model.
     
@@ -21,6 +19,7 @@ def get_embedding(input_text: str):
     Returns:
     list: A 1024-dimensional embedding vector.
     """
+    client = ZhipuAI(api_key=key)
     response = client.embeddings.create(
         model="embedding-3", 
         input=[input_text],
@@ -43,12 +42,14 @@ def cosine_similarity(vec1, vec2):
 
 if __name__ == "__main__":
     # Example usage
+    # Initialize the ZhipuAI client
+    api_key="YOUR-API-KEY-HERE"
     input_1 = "I love my mother"
     input_2 = "Mom said I should work hard"
     
     # Retrieve vector representations of the input texts
-    vector_1 = get_embedding(input_1)
-    vector_2 = get_embedding(input_2)
+    vector_1 = get_embedding(api_key=api_key, input_text= input_1)
+    vector_2 = get_embedding(api_key=api_key, input_text= input_2)
     
     # Calculate cosine similarity between the two vectors
     similarity = cosine_similarity(vector_1, vector_2)

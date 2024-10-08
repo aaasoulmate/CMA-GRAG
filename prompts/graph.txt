@@ -1,56 +1,39 @@
 Your task:
-You are an AI expert specializing in knowledge graph creation to capture relationships based on a given essay input. You need to extract terminologies (as nodes) and relationships between them (as edges) from the input and represent this knowledge in JSON format, adhering to the rules specified.
+You are an AI expert focused on creating knowledge graphs to capture relationships from the given passage. Your task is to extract key terms (nodes) and the relationships between them (edges) and represent this knowledge in JSON format, following the specified rules.
 
-Your planning of executing:
-Step 1: Input Analysis
+The execution steps:
+Step 1: Node Extraction
+Start by carefully reading the given passage to identify key terminologies (nodes) from the given passage and also from the domain that the given passage belongs to. And extract an explanation for each terminology that uses / construct a sentence from the given passage (must be a sentence). For each identified term, extract its name and explanation, assigning a unique ID starting from 1.
 
-Begin by thoroughly reading the essay or text input. Identify key terminologies (nodes) that belong to different disciplines. Ensure that each term is clearly defined or explained in the input.
-Step 2: Node Extraction
+Step 2: Edges Extraction
+For each pair of nodes, establish a relationship only if there is clear evidence in the text. The relationship content must be a single sentence. Create edges using the format "XtoY," where X and Y are node IDs. If a relationship is created from node A to node B, a reverse relationship (B to A) must also be created, using the same content if needed. If a relationship between two nodes is not found, or if it is a self-relation, it is not required.
 
-For each identified term, extract the name and corresponding explanation. Assign a unique ID to each node, starting from 0, and ensure that the explanations are properly extracted from the text to provide clarity for each node.
-Step 3: Edge Extraction and Relationship Mapping
+Step 3: JSON Structuring
 
-For each pair of nodes, infer the relationship between them by analyzing the context or structure of the input. Create edges between the nodes using an ID in the format "XtoY" where X and Y are the node IDs. Ensure that the "content" of the relationship is either extracted from the text or inferred logically.
-Reverse relationships should also be generated (YtoX) if applicable. If no clear relationship is found between two nodes, set the "content" as "no-found."
-Step 4: JSON Structuring
-
-Organize the extracted nodes and edges into the required JSON format. Ensure that the number of edges is N(N-1) for N nodes, excluding self-relations.
-Step 5: Review and Finalize
-
-Double-check all extracted nodes and edges to ensure that they accurately represent the knowledge contained in the input. Correct any missing or unclear relationships before finalizing the JSON.
-
-You can refer to the given example:
-
-Input:
-
-The Pythagorean theorem is a mathematical theorem that describes the relationship between the three sides of a right triangle, which has one 90-degree angle and consists of a hypotenuse and two legs.
-
-Output:
-
-The extracted nodes and edges are listed as follows:
+Organize the extracted nodes and edges into the required JSON format. You can refer to the given example to know the output style.
 
 {
-  "nodes": [
-    {
-      "id": 0,
-      "name": "Pythagorean theorem,"
-      "explanation": "a mathematical theorem to describe the relation of three sides of a right-angled triangle."
-    },
-    {
-      "id": 1,
-      "name": "right triangle,"
-      "explanation": "a triangle with one angle of 90 degrees, consisting of a hypotenuse and two legs."
-    }
-  ],
-  "edges": [
-    {
-      "id": "0to1",
-      "content": "The Pythagorean theorem applies to right triangles."
-    },
-    {
-      "id": "1to0",
-      "content": "Right triangles are the foundation for the Pythagorean theorem."
-  ]
+        "nodes": [
+            {"id": 1, "name": "Node 1", "explanation": "This is the explanation for Node 1"},
+            {"id": 2, "name": "Node 2", "explanation": "This is the explanation for Node 2"},
+            {"id": 3, "name": "Node 3", "explanation": "This is the explanation for Node 3"},
+            {"id": 4, "name": "Node 4", "explanation": "This is the explanation for Node 4"},
+            {"id": 5, "name": "Node 5", "explanation": "This is the explanation for Node 5"}
+        ],
+        "edges": [
+            {"id": "1to2", "content": "Content from Node 1 to Node 2"},
+            {"id": "1to4", "content": "Content from Node 1 to Node 4"},
+            {"id": "1to5", "content": "Content from Node 1 to Node 5"},
+            {"id": "2to1", "content": "Content from Node 2 to Node 1"},
+            {"id": "2to3", "content": "Content from Node 2 to Node 3"},
+            {"id": "3to2", "content": "Content from Node 3 to Node 2"},
+            {"id": "3to4", "content": "Content from Node 3 to Node 4"},
+            {"id": "4to1", "content": "Content from Node 4 to Node 1"},
+            {"id": "4to3", "content": "Content from Node 4 to Node 3"},
+            {"id": "4to5", "content": "Content from Node 4 to Node 5"},
+            {"id": "5to1", "content": "Content from Node 5 to Node 1"},
+            {"id": "5to4", "content": "Content from Node 5 to Node 4"}
+        ]
 }
 
-Please give the json data based on the user input docuement.
+Please just give the Json data based on the given passage from user.

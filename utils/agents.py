@@ -9,8 +9,6 @@ And the agents are composed of a given LLM from this list and a task from prompt
 
 from zhipuai import ZhipuAI
 
-# Initialize the API client with your key
-api_key = "531e9c858c9d4dc1d9295dbf0cdf20e5.zjSejRW3PHh8015f"
 
 class Agent:
     def __init__(self, api_key, model_name="glm-4", system_content=""):
@@ -54,6 +52,7 @@ class Agent:
 
 # Usage example
 if __name__ == "__main__":
+    api_key = "YOUR-API-KEY-HERE"
     agent = Agent(api_key=api_key, model_name="glm-4-flash", system_content="You are an expert familiar with every city around the world.")
     user_input = "Introduce HK in around 50 words."
     
